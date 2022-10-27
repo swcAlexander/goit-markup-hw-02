@@ -26,7 +26,11 @@ body {
 }
 
 .hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .logo {
@@ -116,10 +120,6 @@ body {
   color: var(--secondery-text-color);
 }
 
-.skills-section {
-  margin: 94px auto;
-}
-
 .skills-section-list {
   display: flex;
 }
@@ -131,9 +131,24 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-.work-section-list {
-  margin: auto 30px;
+
+.skills-section,
+.team-section,
+.work-section {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 94px;
+}
+
+.work-section-list {
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.work-section-list a {
+  margin-right: 30px;
 }
 
 .section-title {
@@ -143,7 +158,19 @@ body {
   line-height: 1.16;
   text-align: center;
 }
+.team-section {
+  background-color: #f5f4fa;
+}
 
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-list li {
+  margin-right: 30px;
+  background-color: var(--secondery-text-color);
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -163,7 +190,19 @@ body {
 .footer {
   background-color: var(--secondery-while-color);
 }
+.footer .logo {
+  margin-top: 60px;
+  margin-left: 215px;
+}
 
+.footer-logo-second {
+  color: var(--secondery-text-color);
+}
+
+.footer-list {
+  margin-left: 215px;
+  margin-top: 20px;
+}
 .footer-text {
   font-weight: 400;
   font-size: 14px;
@@ -174,6 +213,6 @@ body {
 .footer-address {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7142;
   color: rgba(255, 255, 255, 0.6);
 }
