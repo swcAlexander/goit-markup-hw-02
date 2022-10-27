@@ -5,37 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/scc/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="logo" href="/">WebStudio</a>
-            <ul>
-                <li><a href="../index.html">Студія</a></li>
-                <li><a href="./portfolio.html">Портфоліо</a></li>
-                <li><a href="/">Контакти</a></li>
+    <header class="header">
+        <nav class="header-nav">
+            <a href="../index.html" class="logo"><span class="logo-first">Web</span><span class="logo-second">Studio</span></a>
+            <ul class="header-nav-menu list">
+                <li><a href="./index.html" class="list">Студія</a></li>
+                <li><a href="/pages/portfolio.html" class="list">Портфоліо</a></li>
+                <li><a href="/" class="list">Контакти</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <ul class="header-nav-contacts list">
+            <li><a href="tel:+380961111111" class="list">+38 096 111 11 11</a></li>
+            <li>
+                <a href="mailto:info@devstudio.com" class="list">
+                    info@devstudio.com
+                </a>
+            </li>
         </ul>
     </header>
-    
     <main>
-        <section>
-            <h1>Портфоліо</h1>
-            <ul>
-                <li><button type="button">Усі</button></li>
-                <li><button type="button">Веб-сайти</button></li>
-                <li><button type="button">Додатки</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
+        <section class="portfolio-section">
+            <h1 class="hidden">Портфоліо</h1>
+            <ul class="button-list list">
+                <li><button type="button" class="portfolio-section-button"><span>Усі</span></button></li>
+                <li><button type="button" class="portfolio-section-button"><span>Веб-сайти</span></button></li>
+                <li><button type="button" class="portfolio-section-button"><span>Додатки</span></button></li>
+                <li><button type="button" class="portfolio-section-button"><span>Дизайн</span></button></li>
+                <li><button type="button" class="portfolio-section-button"><span>Маркетинг</span></button></li>
             </ul>
-            <ul>
+            <ul class="portfolio-section-list list">
                 <li>
                     <img src="/images/tehnocrjack.jpg" alt="">
                     <h2>Технокряк</h2>
@@ -86,17 +89,18 @@
         </section>
         
     </main>
-    <footer>
+    <footer class="footer">
         <div>
-            <a href="/">WebStudio</a>
+            <a href="/" class="footer-logo list"><span class="logo-first">Web</span><span
+                    class="footer-logo-second">Studio</span></a>
         </div>
         <address>
-            <ul>
+            <ul class="footer-list list">
                 <li>
-                    <p>м. Київ, пр-т Лесі Українки, 26</p>
+                    <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
                 </li>
-                <li><a>info@devstudio.com</a></li>
-                <li><a>+38 096 111 11 11</a></li>
+                <li><a class="footer-address">info@devstudio.com</a></li>
+                <li><a class="footer-address">+38 096 111 11 11</a></li>
             </ul>
         </address>
     </footer>
